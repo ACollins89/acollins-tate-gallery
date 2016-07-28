@@ -189,7 +189,7 @@ var g = g1.selectAll("g")
   .attr("class", "parent")
   .call(rect)
   .append("title")
-  .text(function(d) {console.log(typeof(d.value), d.value); return d.name + ', Cases of TB: ' + d.value + ', percent change: ' + formatNumber(d.rate); });
+  .text(function(d) {console.log(typeof(d.value), d.value); return d.name + ', Number of artists: ' + d.value + ', percent women artists: ' + formatNumber(d.rate); });
 
   g.append("text")
   .attr("dy", ".75em")
