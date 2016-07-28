@@ -10,13 +10,13 @@
 .children:hover rect.child {opacity: 1; stroke-width: 1px;}
 .legend rect {stroke-width: 0px;}
 .grandparent text {font-weight: bold;}
-.grandparent:hover rect {fill: darkgrey;}
+.grandparent:hover rect {fill: #5A5050;}
 .children rect.child {opacity: 0;}
 .children rect.parent {}
 .legend text {text-anchor: middle; pointer-events: auto; font-size: 15px; font-family: 'Open Sans Condensed', Helvetica, sans-serif; fill: black;}
 #chart {width: 960px; height: 500px;}
 text {pointer-events: none;}
-rect {stroke: #fff; stroke-width: 1px;}
+rect {stroke: #fff; stroke-width: 5px;}
 rect.parent, .grandparent rect {stroke-width: 2px;}
 p {color:#5A5050; font-family: 'Open Sans Condensed', Helvetica, sans-serif; font-size: 90%;}
 p2 {color:#5A5050; font-family: 'Open Sans Condensed', Helvetica, sans-serif; font-size: 75%;}
@@ -49,12 +49,12 @@ var y = d3.scale.linear()
   .domain([0, height])
   .range([0, height]);
 
-//color scale
+//first step in creating color scale
 var color = d3.scale.linear()
   .domain(colorDomain)
   .range(colorRange);
 
-//color scale (need to come back to this)
+//creating treemap 
 var treemap = d3.layout.treemap()
   .children(function(d, depth) { return depth ? null : d._children; })
   .sort(function(a, b) { return a.value - b.value; })
@@ -88,7 +88,7 @@ var legend = d3.select("#legend").append("svg")
   .attr("height", 30)
   .attr('class', 'legend')
   .selectAll("g")
-    .data([0,1,2,3,4,5,6,7,8,9])
+    .data([0,1,2,3,4,5,6,7,8,9]) //# points in color scale; want to experiment with this more
     .enter()
     .append('g')
 
@@ -103,10 +103,14 @@ function initialize(root) {
 //aggregate values for internal nodes
 function accumulate(d) {
   return (d._children = d.children)
+    //recursion 
     ? d.value = d.children.reduce(function(p, v) {return p + accumulate(v); }, 0)
     : d.value;
 }
 
+//computing the treemap layout recursively such that each group of siblings does use the same dimensions
+//as the parent cell; a wrapper object is created for the parent node for each group of siblings so that the 
+//parent's dimensions are not discarded as we recurse; sets up possibility of zooming
 function layout(d) {
   if (d._children) {
   treemap.nodes({_children: d._children});
@@ -116,6 +120,7 @@ function layout(d) {
     c.dx *= d.dx;
     c.dy *= d.dy;
     c.parent = d;
+  //recursion 
   layout(c);
   });
   }
@@ -156,6 +161,7 @@ function display(d) {
   .select("text")
   .text(name(d))
 
+   //color header based on grandparent's rate
    grandparent
    .datum(d.parent)
    .select("rect")
@@ -202,17 +208,22 @@ var g2 = display(d),
 x.domain([d.x, d.x + d.dx]);
 y.domain([d.y, d.y + d.dy]);
 
+//enabling anti-aliasing during the transition 
 svg.style("shape-rendering", null);
 
+//drawing child nodes on top of parent nodes 
 svg.selectAll(".depth").sort(function(a, b) { return a.depth - b.depth; });
 
+//fade-in entering text
 g2.selectAll("text").style("fill-opacity", 0);
 
+//transition to new view 
 t1.selectAll("text").call(text).style("fill-opacity", 0);
 t2.selectAll("text").call(text).style("fill-opacity", 1);
 t1.selectAll("rect").call(rect);
 t2.selectAll("rect").call(rect);
 
+//removing old node when transition is finished 
 t1.remove().each("end", function() {
   svg.style("shape-rendering", "crispEdges");
   transitioning = false;
