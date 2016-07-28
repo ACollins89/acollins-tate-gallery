@@ -4,89 +4,74 @@
       "children": [
         {
           "rate": 0.02,
-          "value": 769,
+          "value": 45,
           "name": "UK"
         },
         {
           "rate": 0.02,
-          "value": 1021,
+          "value": 10,
           "name": "France"
         },
         {
           "rate": 0.00,
-          "value": 291,
+          "value": 5,
           "name": "Spain"
         },
         {
-          "rate": 0.01,
-          "value": 28,
-          "name": "US"
-        },
-        {
           "rate": 0.03,
-          "value": 935,
+          "value": 5,
           "name": "Other"
         }
       ],
-      "rate": -0.348458904109589,
+      "rate": 0.02,
       "name": "The 1500s"
     },
     {
       "children": [
         {
-          "rate": -0.36470588235294116,
-          "value": 324,
+          "rate": 0.02,
+          "value": 15,
           "name": "UK"
         },
         {
-          "rate": -0.06147540983606557,
-          "value": 458,
+          "rate": 0.03,
+          "value": 20,
           "name": "France"
         },
         {
-          "rate": -0.3368055555555556,
-          "value": 573,
+          "rate": 0.03,
+          "value": 11,
           "name": "Spain"
         },
         {
-          "rate": 0.14285714285714285,
-          "value": 32,
-          "name": "US"
-        },
-        {
-          "rate": 0.010443864229765013,
-          "value": 774,
+          "rate": 0.04,
+          "value": 12,
           "name": "Other"
         }
       ],
-      "rate": -0.18637048192771086,
+      "rate": 0.03,
       "name": "The 1600s"
     },
     {
       "children": [
         {
-          "rate": 0.01,
-          "value": 72,
+          "rate": 0.04,
+          "value": 50,
           "name": "UK"
         },
         {
-          "rate": -0.4645669291338583,
-          "value": 68,
+          "rate": 0.02,
+          "value": 65,
           "name": "France"
         },
         {
-          "rate": 0.03,
-          "value": 19,
+          "rate": 0.01,
+          "value": 49,
           "name": "Spain"
         },
         {
-          "rate": 1.4,
-          "value": 12,
-          "name": "US"
-        },
-        {
-          "rate": 0.00,
-          "value": 51,
+          "rate": 0.08,
+          "value": 15,
           "name": "Other"
         }
       ],
@@ -97,93 +82,93 @@
       "children": [
         {
           "rate": 0.07,
-          "value": 53,
+          "value": 33,
           "name": "UK"
         },
         {
           "rate": 0.04,
-          "value": 119,
+          "value": 39,
           "name": "France"
         },
         {
           "rate": 0.08,
-          "value": 17,
+          "value": 10,
           "name": "Spain"
         },
         {
-          "rate": 0.03,
-          "value": 7,
+          "rate": 0.01,
+          "value": 5,
           "name": "US"
         },
         {
           "rate": 0.10,
-          "value": 57,
+          "value": 7,
           "name": "Other"
         }
       ],
-      "rate": -0.47401247401247404,
+      "rate": 0.05,
       "name": "The 1800s"
     },
     {
       "children": [
         {
-          "rate": -0.39619651347068147,
-          "value": 762,
+          "rate": 0.08,
+          "value": 19,
           "name": "UK"
         },
         {
-          "rate": -0.1719260065288357,
-          "value": 761,
+          "rate": 0.15,
+          "value": 30,
           "name": "France"
         },
         {
-          "rate": -0.2727272727272727,
-          "value": 608,
+          "rate": 0.19,
+          "value": 10,
           "name": "Spain"
         },
         {
-          "rate": -0.23809523809523808,
-          "value": 48,
+          "rate": 0.01,
+          "value": 9,
           "name": "US"
         },
         {
-          "rate": -0.05090137857900318,
-          "value": 895,
+          "rate": 0.30,
+          "value": 2,
           "name": "Other"
         }
       ],
-      "rate": -0.2358936117325379,
+      "rate": 0.22,
       "name": "The 1900s"
     },
     {
       "children": [
         {
-          "rate": -0.3829268292682927,
-          "value": 253,
+          "rate": 0.31,
+          "value": 19,
           "name": "UK"
         },
         {
-          "rate": -0.46920821114369504,
-          "value": 362,
+          "rate": 0.17,
+          "value": 20,
           "name": "France"
         },
         {
-          "rate": -0.3368421052631579,
-          "value": 63,
+          "rate": 0.15,
+          "value": 17,
           "name": "Spain"
         },
         {
-          "rate": 0.6363636363636364,
-          "value": 18,
+          "rate": 0.20,
+          "value": 10,
           "name": "US"
         },
         {
-          "rate": -0.06116207951070336,
-          "value": 307,
+          "rate": 0.35,
+          "value": 8,
           "name": "Other"
         }
       ],
-      "rate": -0.3422950819672131,
+      "rate": 0.30,
       "name": "The 2000s"
     }
   ],
