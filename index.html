@@ -20,7 +20,7 @@ var margin = {top: 30, right: 0, bottom: 20, left: 0},
   height = 500 - margin.top - margin.bottom,
   formatNumber = d3.format(",%"),
   colorDomain = [-.6, 0, .6],
-  colorRange = ["#4F628E", "#78875B", "#061539"],
+  colorRange = ["#ece7f2", "#a6bddb", "#2b8cbe"], //color-brewer approved 
   transitioning;
 
 //setting x & y scales to determine size of boxes
@@ -71,7 +71,7 @@ var legend = d3.select("#legend").append("svg")
   .attr("height", 30)
   .attr('class', 'legend')
   .selectAll("g")
-    .data([0,1,2]) //# points in color scale; want to experiment with this more
+    .data([0,1,2,3,4,6,7,8,9,10,11,12,13,14,15]) //# points in color scale
     .enter()
     .append('g')
 
@@ -172,7 +172,7 @@ var g = g1.selectAll("g")
   .attr("class", "parent")
   .call(rect)
   .append("title")
-  .text(function(d) {console.log(typeof(d.value), d.value); return d.name + ', Number of artists: ' + d.value + ', percent women artists: ' + formatNumber(d.rate); });
+  .text(function(d) {console.log(typeof(d.value), d.value); return 'number of artists from this time period: ' + d.value + '; proportion female artists: ' + formatNumber(d.rate); });
 
   g.append("text")
   .attr("dy", ".75em")
@@ -232,7 +232,7 @@ function rect(rect) {
 
 function name(d) {
   return d.parent
-    ? name(d.parent) + "." + d.name
+    ? name(d.parent) + ": the subset of artists " + d.name + " (click here to return to first level)"
     : d.name;
 }
 
