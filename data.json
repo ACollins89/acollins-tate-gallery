@@ -5,173 +5,173 @@
         {
           "rate": 0.02,
           "value": 45,
-          "name": "UK"
+          "name": "Born in the UK"
         },
         {
           "rate": 0.02,
           "value": 10,
-          "name": "France"
+          "name": "Born in France"
         },
         {
           "rate": 0.00,
           "value": 5,
-          "name": "Spain"
+          "name": "Born in Spain"
         },
         {
           "rate": 0.03,
           "value": 5,
-          "name": "Other"
+          "name": "Born elsewhere"
         }
       ],
       "rate": 0.02,
-      "name": "The 1500s"
+      "name": "Alive during the 1500s"
     },
     {
       "children": [
         {
           "rate": 0.02,
           "value": 15,
-          "name": "UK"
+          "name": "Born in the UK"
         },
         {
           "rate": 0.03,
           "value": 20,
-          "name": "France"
+          "name": "Born in France"
         },
         {
           "rate": 0.03,
           "value": 11,
-          "name": "Spain"
+          "name": "Born in Spain"
         },
         {
           "rate": 0.04,
           "value": 12,
-          "name": "Other"
+          "name": "Born elsewhere"
         }
       ],
       "rate": 0.03,
-      "name": "The 1600s"
+      "name": "Alive during the 1600s"
     },
     {
       "children": [
         {
           "rate": 0.04,
           "value": 50,
-          "name": "UK"
+          "name": "Born in the UK"
         },
         {
           "rate": 0.02,
           "value": 65,
-          "name": "France"
+          "name": "Born in France"
         },
         {
           "rate": 0.01,
           "value": 49,
-          "name": "Spain"
+          "name": "Born in Spain"
         },
         {
           "rate": 0.08,
           "value": 15,
-          "name": "Other"
+          "name": "Born Elsewhere"
         }
       ],
       "rate": 0.05,
-      "name": "The 1700s"
+      "name": "Alive during the 1700s"
     },
     {
       "children": [
         {
           "rate": 0.07,
           "value": 33,
-          "name": "UK"
+          "name": "Born in the UK"
         },
         {
           "rate": 0.04,
           "value": 39,
-          "name": "France"
+          "name": "Born in France"
         },
         {
           "rate": 0.08,
           "value": 10,
-          "name": "Spain"
+          "name": "Born in Spain"
         },
         {
           "rate": 0.01,
           "value": 5,
-          "name": "US"
+          "name": "Born in the US"
         },
         {
           "rate": 0.10,
           "value": 7,
-          "name": "Other"
+          "name": "Born elsewhere"
         }
       ],
       "rate": 0.05,
-      "name": "The 1800s"
+      "name": "Alive during the 1800s"
     },
     {
       "children": [
         {
           "rate": 0.08,
           "value": 19,
-          "name": "UK"
+          "name": "Born in the UK"
         },
         {
           "rate": 0.15,
           "value": 30,
-          "name": "France"
+          "name": "Born in France"
         },
         {
           "rate": 0.19,
           "value": 10,
-          "name": "Spain"
+          "name": "Born in Spain"
         },
         {
           "rate": 0.01,
           "value": 9,
-          "name": "US"
+          "name": "Born in the US"
         },
         {
           "rate": 0.30,
           "value": 2,
-          "name": "Other"
+          "name": "Born elsewhere"
         }
       ],
       "rate": 0.22,
-      "name": "The 1900s"
+      "name": "Alive during the 1900s"
     },
     {
       "children": [
         {
           "rate": 0.31,
           "value": 19,
-          "name": "UK"
+          "name": "Born in the UK"
         },
         {
           "rate": 0.17,
           "value": 20,
-          "name": "France"
+          "name": "Born in France"
         },
         {
           "rate": 0.15,
           "value": 17,
-          "name": "Spain"
+          "name": "Born in Spain"
         },
         {
           "rate": 0.20,
           "value": 10,
-          "name": "US"
+          "name": "Born in the US"
         },
         {
           "rate": 0.35,
           "value": 8,
-          "name": "Other"
+          "name": "Born elsewhere"
         }
       ],
       "rate": 0.30,
-      "name": "The 2000s"
+      "name": "Alive during the 2000s"
     }
   ],
   "rate": 0.3,
-  "name": "Tate Artists of the 1500s-the 2000s"
+  "name": "The Artists of the Tate Gallery (click here to return to first level)"
 }

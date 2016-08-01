@@ -13,4 +13,5 @@ text {pointer-events: none;}
 rect {stroke: #fff; stroke-width: 5px;}
 rect.parent, .grandparent rect {stroke-width: 2px;}
 p {color:#5A5050; font-family: 'Open Sans Condensed', Helvetica, sans-serif; font-size: 100%;}
-h1 {color:#5A5050; font-family: 'Open Sans Condensed', Helvetica, sans-serif; font-size: 110%;}
+sub {color:#5A5050; font-family: 'Open Sans Condensed', Helvetica, sans-serif}
+h1 {color:#5A5050; font-family: 'Open Sans Condensed', Helvetica, sans-serif; font-size: 120%;}

@@ -1,3 +1,5 @@
+
+<!-- sources of code: mike bostock and zan armstrong -->
 <!DOCTYPE html>
 <meta charset="utf-8">
 <title>Artists of the Tate</title>
@@ -5,10 +7,10 @@
 <link rel="stylesheet" href="style.css">
 
 <h1>How much diversity do we see among the artists in the Tate Gallery?</h1>
-<p>First, when did the artists live, and where did they come from?</p>
+<p>First, when did the artists live, where did they come from, and what is the proportion of female artists within each time period and location?</p>
 <p id="chart">
 <footer>
-<p>Data from the Tate Gallery Github database; sources of code for chart: Mike Bostock and Zan Armstrong</p>
+<sub>Data from the Tate Gallery Github database</sub>
 </footer>
 
 <script src="http://d3js.org/d3.v3.min.js"></script>
@@ -18,7 +20,7 @@ var margin = {top: 30, right: 0, bottom: 20, left: 0},
   height = 500 - margin.top - margin.bottom,
   formatNumber = d3.format(",%"),
   colorDomain = [-.6, 0, .6],
-  colorRange = ["#373a93", 'white', "#936638"],
+  colorRange = ["#4F628E", "#78875B", "#061539"],
   transitioning;
 
 //setting x & y scales to determine size of boxes
@@ -69,7 +71,7 @@ var legend = d3.select("#legend").append("svg")
   .attr("height", 30)
   .attr('class', 'legend')
   .selectAll("g")
-    .data([0,1,2,3]) //# points in color scale; want to experiment with this more
+    .data([0,1,2]) //# points in color scale; want to experiment with this more
     .enter()
     .append('g')
 
