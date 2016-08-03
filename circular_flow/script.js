@@ -18,20 +18,20 @@ var outerRadius = Math.min(width, height) / 2  - (mobileScreen ? 80 : 100),
   opacityDefault = 0.7, //default opacity of chords
   opacityLow = 0.02; //hover opacity of those chords not hovered over
   
-var Names = ["The UK","France","Spain", "The US", "The Middle East","","The UK","France","Spain","The US", "The Middle East", ];
+var Names = ["The UK","France","Spain","","The UK","France","Spain",""];
 
-var respondents = 95, //Total number of respondents (i.e. the number that makes up the total group)
+var respondents = 700, //Total number of respondents (i.e. the number that makes up the total group)
   emptyPerc = 0.4, //What % of the circle should become empty
   emptyStroke = Math.round(respondents*emptyPerc); 
 var matrix = [
-  [0,0,0,0,0,0,15,15,5,5,5,0], //X
-  [0,0,0,0,0,0,5,5,5,5,5,0], //Y
-  [0,0,0,0,0,0,5,2,2,2,2,0], //Z
-  [0,0,0,0,0,0,0,0,0,0,0,emptyStroke], //Dummy stroke
-  [2,1,1,1,1,0,0,0,0,0,0,0], //C
-  [1,1,1,1,1,0,0,0,0,0,0,0], //B
-  [1,1,1,1,2,0,0,0,0,0,0,0], //A
-  [0,0,0,0,0,emptyStroke,0,0,0,0,0,0] //Dummy stroke
+  [0,0,0,0,10,5,15,0], 
+  [0,0,0,0,5,15,20,0], 
+  [0,0,0,0,15,5,5,0], 
+  [0,0,0,0,0,0,0,emptyStroke], 
+  [10,5,15,0,0,0,0,0],
+  [5,15,5,0,0,0,0,0], 
+  [15,20,5,0,0,0,0,0],
+  [0,0,0,emptyStroke,0,0,0,0] 
 ];
 //Calculate how far the Chord Diagram needs to be rotated clockwise to make the dummy
 //invisible chord center vertically
@@ -106,20 +106,6 @@ var chords = wrapper.selectAll("path.chord")
   .style("pointer-events", function(d,i) { return (Names[d.source.index] === "" ? "none" : "auto"); }) //Remove pointer events from dummy strokes
   .attr("d", path); 
 
-////////////////////////////////////////////////////////////
-///////////////////////// Tooltip //////////////////////////
-////////////////////////////////////////////////////////////
-
-//Arcs
-g.append("title") 
-  .text(function(d, i) {return Math.round(d.value) + " people in " + Names[i];});
-  
-//Chords
-chords.append("title")
-  .text(function(d) {
-    return [Math.round(d.source.value), " people from ", Names[d.target.index], " to ", Names[d.source.index]].join(""); 
-  });
-  
 ////////////////////////////////////////////////////////////
 ////////////////// Extra Functions /////////////////////////
 ////////////////////////////////////////////////////////////
