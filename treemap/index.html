@@ -138,6 +138,12 @@ d3.json("data.json", function(root) {
   layout     (root);
   display    (root);
 
+var node = div.datum(root).selectAll(".node").data(treemap.nodes).enter().append("div")
+  .attr ("class", "node")
+  .call (position)
+  .style("background", function(d) { return d.children ? color(d.name) : null; })
+  .text (function(d) { return d.children ? null : d.name; });
+
 function display(d) {grandparent.datum(d.parent).on("click", transition).select("text").text(name(d))
 
 grandparent.datum(d.parent).select("rect").attr ("fill", function(){console.log(color(d.rate)); return color(d['rate'])})
