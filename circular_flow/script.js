@@ -18,24 +18,24 @@ var outerRadius = Math.min(width, height) / 2  - (mobileScreen ? 80 : 100),
   opacityDefault = 0.7, //default opacity of chords
   opacityLow = 0.02; //hover opacity of those chords not hovered over
   
-var Names = ["The UK","France","Spain","","The UK","France","Spain",""];
+var Names = ["The UK","France","Spain","","Spain","France","The UK",""];
 
-var respondents = 700, //Total number of respondents (i.e. the number that makes up the total group)
+var respondents = 636, //Total number of respondents (i.e. the number that makes up the total group)
   emptyPerc = 0.4, //What % of the circle should become empty
   emptyStroke = Math.round(respondents*emptyPerc); 
 var matrix = [
-  [0,0,0,0,10,5,15,0], 
-  [0,0,0,0,5,15,20,0], 
-  [0,0,0,0,15,5,5,0], 
+  [0,0,0,0,42,63,71,0], 
+  [0,0,0,0,22,10,8,0], 
+  [0,0,0,0,31,37,17,0], 
   [0,0,0,0,0,0,0,emptyStroke], 
-  [10,5,15,0,0,0,0,0],
-  [5,15,5,0,0,0,0,0], 
-  [15,20,5,0,0,0,0,0],
+  [62,8,20,0,0,0,0,0],
+  [11,45,27,0,0,0,0,0], 
+  [16,59,87,0,0,0,0,0],
   [0,0,0,emptyStroke,0,0,0,0] 
 ];
 //Calculate how far the Chord Diagram needs to be rotated clockwise to make the dummy
 //invisible chord center vertically
-var offset = (5 * Math.PI) * (emptyStroke/(respondents + emptyStroke))/3;
+var offset = (2 * Math.PI) * (emptyStroke/(respondents + emptyStroke))/2.7;
 
 //Custom sort function of the chords to keep them in the original order
 function customSort(a,b) {
