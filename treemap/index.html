@@ -8,13 +8,10 @@
 
 <h1>How much diversity do we see among the artists in the Tate?</h1>
 <p>When did the artists live, where did they come from, what mediums did they work in, and what is the proportion of female artists within each time period, location, and medium?</p>
-<div class="dropdown">
-<button onclick="myFunction()" class="dropbtn">Dropdown</button>
-  <div id="myDropdown" class="dropdown-content">
-    <a href="#first">years alive, then place of birth</a>
-    <a href="#second">place of birth, then medium</a>
-  </div>
-</div>
+<select id = "opts">
+<option value="ds1">Years Alive & Place of Birth</option>
+<option value="ds2" selected="selected">Place of Birth & Medium</option> 
+</select>
 <p id="chart">
 <h2 style="font-weight: bold">Legend</h2>
 <p style="width: 960px">Color represents percent female artists (a darker box indicates a higher percentage)</p>
@@ -80,12 +77,12 @@ function myFunction() {
 
 window.onclick = function(event) {
   if (!event.target.matches('.dropbtn')) {
-    var dropdowns = document.getElementsByClassName("dropdown-content");
-    var i;
+    var  dropdowns = document.getElementsByClassName("dropdown-content");
+    var  i;
     for (i = 0; i < dropdowns.length; i++) {
       var openDropdown = dropdowns[i];
       if (openDropdown.classList.contains('show')) {
-        openDropdown.classList.remove('show');
+          openDropdown.classList.remove('show');
       }
     }
   }
