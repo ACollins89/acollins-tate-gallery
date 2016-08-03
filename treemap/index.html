@@ -22,7 +22,7 @@ var margin     = {top: 30, right: 0, bottom: 20, left: 0},
   width        = 960,
   height       = 500 - margin.top - margin.bottom,
   formatNumber = d3.format(",%"),
-  colorDomain  = [-.2, 0, .2],
+  colorDomain  = [0, .10, .50],
   colorRange   = ["#ece7f2", "#a6bddb", "#2b8cbe"], //source: color brewer
   transitioning;
 
@@ -63,7 +63,7 @@ var legend = d3.select("#legend").append("svg")
   .attr("height", 30)
   .attr('class', 'legend')
   .selectAll("g")
-    .data  ([0,1,2,3,4,5,6,7,8,9,10,11,12,13,14,15,16,17,18,19,20])
+    .data  ([0,1,2,3,4,5,6,7,8])
     .enter ()
     .append('g')
 
