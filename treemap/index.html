@@ -7,7 +7,14 @@
 <link rel="stylesheet" href="style.css">
 
 <h1>How much diversity do we see among the artists in the Tate?</h1>
-<p>First, when did the artists live, where did they come from, and what is the proportion of female artists within each time period and location?</p>
+<p>When did the artists live, where did they come from, what mediums did they work in, and what is the proportion of female artists within each time period, location, and medium?</p>
+<div class="dropdown">
+<button onclick="myFunction()" class="dropbtn">Dropdown</button>
+  <div id="myDropdown" class="dropdown-content">
+    <a href="#first">years alive, then place of birth</a>
+    <a href="#second">place of birth, then medium</a>
+  </div>
+</div>
 <p id="chart">
 <h2 style="font-weight: bold">Legend</h2>
 <p style="width: 960px">Color represents percent female artists (a darker box indicates a higher percentage)</p>
@@ -66,6 +73,23 @@ var legend = d3.select("#legend").append("svg")
     .data  ([0,1,2,3,4,5,6,7,8])
     .enter ()
     .append('g')
+
+function myFunction() {
+    document.getElementById("myDropdown").classList.toggle("show");
+}
+
+window.onclick = function(event) {
+  if (!event.target.matches('.dropbtn')) {
+    var dropdowns = document.getElementsByClassName("dropdown-content");
+    var i;
+    for (i = 0; i < dropdowns.length; i++) {
+      var openDropdown = dropdowns[i];
+      if (openDropdown.classList.contains('show')) {
+        openDropdown.classList.remove('show');
+      }
+    }
+  }
+}
 
 function initialize(root) {
   root.x = root.y = 0;

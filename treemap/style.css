@@ -16,3 +16,36 @@ p {color:#5A5050; font-family: 'Open Sans Condensed', Helvetica, sans-serif; fon
 sub {color:#5A5050; font-family: 'Open Sans Condensed', Helvetica, sans-serif}
 h1 {color:#5A5050; font-family: 'Open Sans Condensed', Helvetica, sans-serif; font-size: 120%; margin-bottom:0em}
 h2 {color:#5A5050; font-family: 'Open Sans Condensed', Helvetica, sans-serif; font-size: 100%; margin-bottom:0em}
+.dropbtn {
+    background-color: #5A5050;
+    color: white;
+    padding: 8px;
+    font-size: 12px;
+    border: none;
+    cursor: pointer;
+}
+.dropbtn:hover, .dropbtn:focus {
+    background-color: #5A5050;
+}
+.dropdown {
+    position: relative;
+    display: inline-block;
+}
+.dropdown-content {
+    display: none;
+    position: absolute;
+    background-color: #f1f1f1;
+    min-width: 160px;
+    overflow: auto;
+    box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+}
+.dropdown-content a {
+    color: black;
+    padding: 8px 8px;
+    font-size: 12px;
+    font-family: 'Open Sans Condensed', Helvetica, sans-serif;
+    text-decoration: none;
+    display: block;
+}
+.dropdown a:hover {background-color: #5A5050}
+.show {display:block;}
