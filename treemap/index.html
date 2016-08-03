@@ -8,10 +8,10 @@
 
 <h1>How much diversity do we see among the artists in the Tate?</h1>
 <p>When did the artists live, where did they come from, what mediums did they work in, and what is the proportion of female artists within each time period, location, and medium?</p>
-<select id = "opts">
-<option value="ds1">Years Alive & Place of Birth</option>
-<option value="ds2" selected="selected">Place of Birth & Medium</option> 
-</select>
+<form>
+  <label><input type="radio" name="mode" value="yrsbirth" checked> Years & Place of Birth</label>
+  <label><input type="radio" name="mode" value="birthmed"> Place of Birth & Medium</label>
+</form>
 <p id="chart">
 <h2 style="font-weight: bold">Legend</h2>
 <p style="width: 960px">Color represents percent female artists (a darker box indicates a higher percentage)</p>

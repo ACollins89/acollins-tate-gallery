@@ -49,3 +49,18 @@ h2 {color:#5A5050; font-family: 'Open Sans Condensed', Helvetica, sans-serif; fo
 }
 .dropdown a:hover {background-color: #5A5050}
 .show {display:block;}
+body {
+  font-family: 'Open Sans Condensed', Helvetica, sans-serif;
+  color:#5A5050;
+  font-size: 13px;
+  margin: auto;
+  position: relative;
+}
+.node {
+  border: solid 1px white;
+  font: 10px sans-serif;
+  line-height: 8px;
+  overflow: hidden;
+  position: absolute;
+  text-indent: 2px;
+}
