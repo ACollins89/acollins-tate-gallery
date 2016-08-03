@@ -35,7 +35,7 @@ var matrix = [
 ];
 //Calculate how far the Chord Diagram needs to be rotated clockwise to make the dummy
 //invisible chord center vertically
-var offset = (2 * Math.PI) * (emptyStroke/(respondents + emptyStroke))/4;
+var offset = (5 * Math.PI) * (emptyStroke/(respondents + emptyStroke))/3;
 
 //Custom sort function of the chords to keep them in the original order
 function customSort(a,b) {
