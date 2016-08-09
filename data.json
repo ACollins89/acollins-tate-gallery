@@ -28,37 +28,7 @@
         }
       ],
       "rate": 0.00,
-      "name": "alive during the 1500s"
-    },
-    {
-      "children": [
-        {
-          "url": "http://www.cookingchanneltv.com/home.html", 
-          "rate": 0.02,
-          "value": 15,
-          "name": "born in the UK"
-        },
-        {
-          "url": "http://www.cookingchanneltv.com/home.html", 
-          "rate": 0.03,
-          "value": 20,
-          "name": "born in France"
-        },
-        {
-          "url": "http://www.cookingchanneltv.com/home.html", 
-          "rate": 0.03,
-          "value": 11,
-          "name": "born in Spain"
-        },
-        {
-          "url": "http://www.cookingchanneltv.com/home.html", 
-          "rate": 0.04,
-          "value": 12,
-          "name": "born elsewhere"
-        }
-      ],
-      "rate": 0.00,
-      "name": "alive during the 1600s"
+      "name": "alive during the 1500s and 1600s"
     },
     {
       "children": [
@@ -88,43 +58,7 @@
         }
       ],
       "rate": 0.08,
-      "name": "alive during the 1700s"
-    },
-    {
-      "children": [
-        {
-          "url": "http://mlb.mlb.com/home", 
-          "rate": 0.07,
-          "value": 33,
-          "name": "born in the UK"
-        },
-        {
-          "url": "http://mlb.mlb.com/home", 
-          "rate": 0.04,
-          "value": 39,
-          "name": "born in France"
-        },
-        {
-          "url": "http://mlb.mlb.com/home", 
-          "rate": 0.08,
-          "value": 10,
-          "name": "born in Spain"
-        },
-        {
-          "url": "http://mlb.mlb.com/home", 
-          "rate": 0.01,
-          "value": 5,
-          "name": "born in the US"
-        },
-        {
-          "url": "http://mlb.mlb.com/home", 
-          "rate": 0.10,
-          "value": 7,
-          "name": "Born elsewhere"
-        }
-      ],
-      "rate": 0.09,
-      "name": "alive during the 1800s"
+      "name": "alive during the 1700s and 1800s"
     },
     {
       "children": [
@@ -160,43 +94,7 @@
         }
       ],
       "rate": 0.22,
-      "name": "alive during the 1900s"
-    },
-    {
-      "children": [
-        {
-          "url": "http://mlb.mlb.com/home", 
-          "rate": 0.31,
-          "value": 19,
-          "name": "born in the UK"
-        },
-        {
-          "url": "http://mlb.mlb.com/home", 
-          "rate": 0.17,
-          "value": 20,
-          "name": "born in France"
-        },
-        {
-          "url": "http://mlb.mlb.com/home", 
-          "rate": 0.15,
-          "value": 17,
-          "name": "born in Spain"
-        },
-        {
-          "url": "http://mlb.mlb.com/home", 
-          "rate": 0.20,
-          "value": 10,
-          "name": "born in the US"
-        },
-        {
-          "url": "http://mlb.mlb.com/home", 
-          "rate": 0.35,
-          "value": 8,
-          "name": "born elsewhere"
-        }
-      ],
-      "rate": 0.30,
-      "name": "alive during the 2000s"
+      "name": "alive during the 1900s and 2000s"
     }
   ],
   "rate": 0.3,
