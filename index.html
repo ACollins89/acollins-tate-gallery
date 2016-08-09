@@ -1,5 +1,5 @@
 
-<!-- sources of code: mike bostock and zan armstrong -->
+<!-- sources of code: mike bostock, zan armstrong, and sushanthece -->
 <!DOCTYPE html>
 <meta charset="utf-8">
 <title>Artists of the Tate</title>
@@ -22,6 +22,10 @@
 
 <script src="http://d3js.org/d3.v3.min.js"></script>
 <script>
+if(parent.document.getElementsByTagName("iframe")[0]) {
+   parent.document.getElementsByTagName("iframe")[0].setAttribute('style', 'height: 700px !important');
+}
+
 var margin     = {top: 30, right: 0, bottom: 20, left: 0},
   width        = 960,
   height       = 500 - margin.top - margin.bottom,
@@ -162,6 +166,11 @@ g.selectAll(".child")
 g.append("rect")
   .attr  ("class", "parent")
   .call  (rect)
+  .on("click", function(d) { 
+    if(!d.children){
+    window.open(d.url); 
+    }
+  })
   .append("title")
   .text  (function(d) {console.log(typeof(d.value), d.value); return 'number of artists from this time period: ' + d.value + '; proportion female artists: ' + formatNumber(d.rate); });
 

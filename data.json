@@ -3,21 +3,25 @@
     {
       "children": [
         {
+          "url": "http://www.vice.com/en_us",
           "rate": 0.02,
           "value": 45,
           "name": "born in the UK"
         },
         {
+          "url": "http://www.vice.com/en_us",
           "rate": 0.02,
           "value": 10,
           "name": "born in France"
         },
         {
+          "url": "http://www.vice.com/en_us",
           "rate": 0.00,
           "value": 5,
           "name": "born in Spain"
         },
         {
+          "url": "http://www.vice.com/en_us",
           "rate": 0.03,
           "value": 5,
           "name": "born elsewhere"
@@ -29,21 +33,25 @@
     {
       "children": [
         {
+          "url": "http://www.cookingchanneltv.com/home.html", 
           "rate": 0.02,
           "value": 15,
           "name": "born in the UK"
         },
         {
+          "url": "http://www.cookingchanneltv.com/home.html", 
           "rate": 0.03,
           "value": 20,
           "name": "born in France"
         },
         {
+          "url": "http://www.cookingchanneltv.com/home.html", 
           "rate": 0.03,
           "value": 11,
           "name": "born in Spain"
         },
         {
+          "url": "http://www.cookingchanneltv.com/home.html", 
           "rate": 0.04,
           "value": 12,
           "name": "born elsewhere"
@@ -55,21 +63,25 @@
     {
       "children": [
         {
+          "url": "http://mlb.mlb.com/home", 
           "rate": 0.04,
           "value": 50,
           "name": "born in the UK"
         },
         {
+          "url": "http://mlb.mlb.com/home", 
           "rate": 0.02,
           "value": 65,
           "name": "born in France"
         },
         {
+          "url": "http://mlb.mlb.com/home", 
           "rate": 0.01,
           "value": 49,
           "name": "born in Spain"
         },
         {
+          "url": "http://mlb.mlb.com/home", 
           "rate": 0.08,
           "value": 15,
           "name": "born elsewhere"
@@ -81,26 +93,31 @@
     {
       "children": [
         {
+          "url": "http://mlb.mlb.com/home", 
           "rate": 0.07,
           "value": 33,
           "name": "born in the UK"
         },
         {
+          "url": "http://mlb.mlb.com/home", 
           "rate": 0.04,
           "value": 39,
           "name": "born in France"
         },
         {
+          "url": "http://mlb.mlb.com/home", 
           "rate": 0.08,
           "value": 10,
           "name": "born in Spain"
         },
         {
+          "url": "http://mlb.mlb.com/home", 
           "rate": 0.01,
           "value": 5,
           "name": "born in the US"
         },
         {
+          "url": "http://mlb.mlb.com/home", 
           "rate": 0.10,
           "value": 7,
           "name": "Born elsewhere"
@@ -112,26 +129,31 @@
     {
       "children": [
         {
+          "url": "http://mlb.mlb.com/home", 
           "rate": 0.08,
           "value": 19,
           "name": "born in the UK"
         },
         {
+          "url": "http://mlb.mlb.com/home", 
           "rate": 0.15,
           "value": 30,
           "name": "born in France"
         },
         {
+          "url": "http://mlb.mlb.com/home", 
           "rate": 0.19,
           "value": 10,
           "name": "born in Spain"
         },
         {
+          "url": "http://mlb.mlb.com/home", 
           "rate": 0.01,
           "value": 9,
           "name": "Born in the US"
         },
         {
+          "url": "http://mlb.mlb.com/home", 
           "rate": 0.30,
           "value": 2,
           "name": "born elsewhere"
@@ -143,26 +165,31 @@
     {
       "children": [
         {
+          "url": "http://mlb.mlb.com/home", 
           "rate": 0.31,
           "value": 19,
           "name": "born in the UK"
         },
         {
+          "url": "http://mlb.mlb.com/home", 
           "rate": 0.17,
           "value": 20,
           "name": "born in France"
         },
         {
+          "url": "http://mlb.mlb.com/home", 
           "rate": 0.15,
           "value": 17,
           "name": "born in Spain"
         },
         {
+          "url": "http://mlb.mlb.com/home", 
           "rate": 0.20,
           "value": 10,
           "name": "born in the US"
         },
         {
+          "url": "http://mlb.mlb.com/home", 
           "rate": 0.35,
           "value": 8,
           "name": "born elsewhere"
