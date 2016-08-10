@@ -31,7 +31,7 @@ var margin     = {top: 30, right: 0, bottom: 20, left: 0},
   height       = 500 - margin.top - margin.bottom,
   formatNumber = d3.format(",%"),
   colorDomain  = [0, .10, .50],
-  colorRange   = ["#ece7f2", "#a6bddb", "#2b8cbe"], //source: color brewer
+  colorRange   = ["#ece7f2", "#a6bddb", "#2b8cbe"], 
   transitioning;
 
 var x = d3.scale.linear()
@@ -223,7 +223,7 @@ function rect(rect) {
 
 function name(d) {
   return d.parent
-    ? name(d.parent) + ": the subset of artists " + d.name + " (click here to return to first level)"
+    ? name(d.parent) + ": the subset of artists " + d.name + " (click here to return to the first level, or anywhere below to view some of the Tate's collection from this time period)"
     : d.name;
 }
 
