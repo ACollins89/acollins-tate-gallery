@@ -8,19 +8,23 @@
 
 <h1>How much diversity do we see among the artists in the Tate?</h1>
 <p>When did the artists live, where did they come from, what mediums did they work in, and what is the proportion of female artists within each time period, location, and medium?</p>
+
 <form>
-  <label><input type="radio" name="mode" value="yrsbirth" checked> Years & Place of Birth</label>
-  <label><input type="radio" name="mode" value="birthmed"> Place of Birth & Medium</label>
+  <label><input type="radio" name="mode" value="yrsbirth" checked> years alive, then place of birth </label>
+  <label><input type="radio" name="mode" value="birthmed">         place of birth, then medium      </label>
 </form>
-<p id="chart">
-<h2 style="font-weight: bold">Legend</h2>
-<p style="width: 960px">Color represents percent female artists (a darker box indicates a higher percentage)</p>
-<div id="legend"></div>
+
+<p   id    = "chart">
+<h2  style = "font-weight: bold">Legend</h2>
+<p   style = "width: 960px">Depth of color represents percent female artists (a darker box indicates a higher percentage)</p>
+<div id    = "legend"></div>
+
 <footer>
-<sub>Data from the Tate Github database</sub>
+  <sub>Data from the Tate Github database</sub>
 </footer>
 
 <script src="http://d3js.org/d3.v3.min.js"></script>
+
 <script>
 if(parent.document.getElementsByTagName("iframe")[0]) {
    parent.document.getElementsByTagName("iframe")[0].setAttribute('style', 'height: 700px !important');
