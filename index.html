@@ -208,22 +208,22 @@ return g;
 }
 
 function text(text) {
-  text.attr("x", function(d) { return x(d.x) + 6; })
-      .attr("y", function(d) { return y(d.y) + 6; })
-      .attr("fill", function (d) {return getContrast50(color(parseFloat(d.rate)))});
+  text.attr("x",    function(d) { return x(d.x) + 6; })
+      .attr("y",    function(d) { return y(d.y) + 6; })
+      .attr("fill", function(d) { return getContrast50(color(parseFloat(d.rate)))});
 }
 
 function rect(rect) {
-  rect.attr("x", function(d) { return x(d.x); })
-      .attr("y", function(d) { return y(d.y); })
-      .attr("width", function(d) { return x(d.x + d.dx) - x(d.x); })
-      .attr("height", function(d) { return y(d.y + d.dy) - y(d.y); })
-      .attr("fill", function(d){return color(parseFloat(d.rate));});
+  rect.attr("x",      function(d) { return x(d.x); })
+      .attr("y",      function(d) { return y(d.y); })
+      .attr("width",  function(d) { return x(d.x + d.dx) - x(d.x);})
+      .attr("height", function(d) { return y(d.y + d.dy) - y(d.y);})
+      .attr("fill",   function(d) { return color(parseFloat(d.rate));});
 }
 
 function name(d) {
   return d.parent
-    ? name(d.parent) + ": the subset of artists " + d.name + " (click here to return to the first level, or anywhere below to view some of the Tate's collection from this time period)"
+    ? name(d.parent) + ": the subset of artists " + d.name + " (click here to return to the first level, or anywhere below to view a piece of the Tate's collection from this time period)"
     : d.name;
 }
 

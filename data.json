@@ -7,25 +7,25 @@
       "name": "alive during the 1500s and 1600s",
       "children": [
         {
-          "url": "http://www.vice.com/en_us",
+          "url": "page1.html",
           "rate": 0.02,
           "value": 45,
           "name": "born in the UK"
         },
         {
-          "url": "http://www.vice.com/en_us",
+          "url": "page1.html",
           "rate": 0.02,
           "value": 10,
           "name": "born in France"
         },
         {
-          "url": "http://www.vice.com/en_us",
+          "url": "page1.html",
           "rate": 0.00,
           "value": 5,
           "name": "born in Spain"
         },
         {
-          "url": "http://www.vice.com/en_us",
+          "url": "page1.html",
           "rate": 0.03,
           "value": 5,
           "name": "born elsewhere"
@@ -37,25 +37,25 @@
       "name": "alive during the 1700s and 1800s",
       "children": [
         {
-          "url": "http://mlb.mlb.com/home", 
+          "url": "page2.html", 
           "rate": 0.04,
           "value": 50,
           "name": "born in the UK" 
         },
         {
-          "url": "http://mlb.mlb.com/home", 
+          "url": "page2.html", 
           "rate": 0.02,
           "value": 65,
           "name": "born in France"
         },
         {
-          "url": "http://mlb.mlb.com/home", 
+          "url": "page2.html", 
           "rate": 0.01,
           "value": 49,
           "name": "born in Spain"
         },
         {
-          "url": "http://mlb.mlb.com/home", 
+          "url": "page2.html", 
           "rate": 0.08,
           "value": 15,
           "name": "born elsewhere"
@@ -67,31 +67,31 @@
       "name": "alive during the 1900s and 2000s",
       "children": [
         {
-          "url": "http://mlb.mlb.com/home", 
+          "url": "page3.html", 
           "rate": 0.08,
           "value": 19,
           "name": "born in the UK"
         },
         {
-          "url": "http://mlb.mlb.com/home", 
+          "url": "page3.html", 
           "rate": 0.15,
           "value": 30,
           "name": "born in France"
         },
         {
-          "url": "http://mlb.mlb.com/home", 
+          "url": "page3.html", 
           "rate": 0.19,
           "value": 10,
           "name": "born in Spain"
         },
         {
-          "url": "http://mlb.mlb.com/home", 
+          "url": "page3.html", 
           "rate": 0.01,
           "value": 9,
           "name": "Born in the US"
         },
         {
-          "url": "http://mlb.mlb.com/home", 
+          "url": "page3.html", 
           "rate": 0.30,
           "value": 2,
           "name": "born elsewhere"
