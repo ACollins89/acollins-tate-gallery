@@ -1,6 +1,10 @@
 {
+  "rate": 0.03, 
+  "name": "artists of the Tate", 
   "children": [
     {
+      "rate": 0.00,
+      "name": "alive during the 1500s and 1600s",
       "children": [
         {
           "url": "http://www.vice.com/en_us",
@@ -26,11 +30,11 @@
           "value": 5,
           "name": "born elsewhere"
         }
-      ],
-      "rate": 0.00,
-      "name": "alive during the 1500s and 1600s"
+     ]
     },
     {
+      "rate": 0.08,
+      "name": "alive during the 1700s and 1800s",
       "children": [
         {
           "url": "http://mlb.mlb.com/home", 
@@ -56,11 +60,11 @@
           "value": 15,
           "name": "born elsewhere"
         }
-      ],
-      "rate": 0.08,
-      "name": "alive during the 1700s and 1800s"
+      ]
     },
     {
+      "rate": 0.22,
+      "name": "alive during the 1900s and 2000s",
       "children": [
         {
           "url": "http://mlb.mlb.com/home", 
@@ -92,11 +96,7 @@
           "value": 2,
           "name": "born elsewhere"
         }
-      ],
-      "rate": 0.22,
-      "name": "alive during the 1900s and 2000s"
+      ]
     }
-  ],
-  "rate": 0.3,
-  "name": "artists of the Tate"
+  ]
 }
