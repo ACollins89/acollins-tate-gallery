@@ -7,7 +7,7 @@
 .grandparent:hover rect                           {fill: #5A5050;}
 .children          rect.child                     {opacity: 0;}
 .children          rect.parent                    {}
-.grandparent       text                           {font-weight: bold;}
+.grandparent       text                           {font-weight: bold; font-family: 'Open Sans Condensed', Helvetica, sans-serif; fill: #5A5050;}
 .legend            text                           {text-anchor: middle; pointer-events: auto; font-size: 15px; font-family: 'Open Sans Condensed', Helvetica, sans-serif; fill: #5A5050;}
 .dropdown a:hover                                 {background-color: #5A5050}
 .show                                             {display:block;}
@@ -21,10 +21,10 @@
                    text                           {pointer-events: none;}
 
 sub  {color:#5A5050; font-family: 'Open Sans Condensed', Helvetica, sans-serif}
-h1   {color:#5A5050; font-family: 'Open Sans Condensed', Helvetica, sans-serif; font-size: 120%; margin-bottom:0em}
+h1   {color:#5A5050; font-family: 'Open Sans Condensed', Helvetica, sans-serif; font-size: 170%; margin-bottom:0em}
 h2   {color:#5A5050; font-family: 'Open Sans Condensed', Helvetica, sans-serif; font-size: 100%; margin-bottom:0em}
 p    {color:#5A5050; font-family: 'Open Sans Condensed', Helvetica, sans-serif; font-size: 90%;  margin-top:   0em}
-body {color:#5A5050; font-family: 'Open Sans Condensed', Helvetica, sans-serif; font-size: 13px; margin:       auto; position: relative;}
+body {color:#5A5050; font-family: 'Open Sans Condensed', Helvetica, sans-serif; font-size: 13px; margin:       auto; background: #F0F0F0; position: relative;}
 
 .dropbtn {
     background-color: #5A5050;
