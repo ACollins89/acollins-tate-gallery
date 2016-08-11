@@ -1,5 +1,5 @@
 
-<!-- sources of code: mike bostock, zan armstrong, and sushanthece -->
+<!-- sources of code: mike bostock, zan armstrong, sushanthece, stack overflow -->
 <!DOCTYPE html>
 <meta charset="utf-8">
 <title>Artists of the Tate</title>
@@ -7,7 +7,6 @@
 <link rel="stylesheet" href="style.css">
 
 <h1>How much diversity do we see among the artists in the Tate?</h1>
-<p>When did the artists live, where did they come from, what mediums did they work in, and what is the proportion of female artists within each time period, location, and medium?</p>
 
 <form>
   <label><input type="radio" name="mode" value="yrsbirth" checked> years alive, then place of birth </label>
@@ -16,7 +15,7 @@
 
 <p   id    = "chart">
 <h2  style = "font-weight: bold">Legend</h2>
-<p   style = "width: 960px">Depth of color represents percent female artists (a darker box indicates a higher percentage)</p>
+<p   style = "width: 960px">Depth of color represents percent female artists</p>
 <div id    = "legend"></div>
 
 <footer>
@@ -52,7 +51,7 @@ var color = d3.scale.linear()
 
 var treemap = d3.layout.treemap()
   .children(function(d, depth) { return depth ? null : d._children; })
-  .sort    (function(a, b) { return a.value - b.value; })
+  .sort    (function(a, b)     { return a.value - b.value; })
   .ratio   (height / width * 0.5 * (1 + Math.sqrt(5)))
   .round   (false);
 
@@ -97,9 +96,9 @@ window.onclick = function(event) {
 }
 
 function initialize(root) {
-  root.x = root.y = 0;
-  root.dx = width;
-  root.dy = height;
+  root.x     = root.y = 0;
+  root.dx    = width;
+  root.dy    = height;
   root.depth = 0;
 }
 
@@ -111,7 +110,7 @@ function accumulate(d) {
 
 function layout(d) {
   if (d._children) {
-  treemap.nodes ({_children: d._children});
+  treemap.nodes   ({_children: d._children});
   d._children.forEach(function(c) {
     c.x      = d.x + c.x * d.dx;
     c.y      = d.y + c.y * d.dy;
@@ -126,11 +125,11 @@ function layout(d) {
 function colorIncrements(d) {return (colorDomain[colorDomain.length - 1] - colorDomain[0])/18*d + colorDomain[0];}
 
 legend.append("rect")
-  .attr("x", function(d){return margin.left + d * 40})
-  .attr("y", 0)
-  .attr("fill", function(d) {return color(colorIncrements(d))})
-  .attr('width', '40px')
-  .attr('height', '40px')
+  .attr("x",function(d){return margin.left + d * 40})
+  .attr("y",0)
+  .attr("fill",function(d) {return color(colorIncrements(d))})
+  .attr('width','40px')
+  .attr('height','40px')
 
 legend.append("text")
   .text(function(d){return formatNumber(colorIncrements(d))})
@@ -157,8 +156,7 @@ function display(d) {grandparent.datum(d.parent).on("click", transition).select(
 grandparent.datum(d.parent).select("rect").attr ("fill", function(){console.log(color(d.rate)); return color(d['rate'])})
 
 var g1 = svg.insert("g", ".grandparent").datum(d).attr("class", "depth");
-
-var g = g1.selectAll("g").data(d._children).enter().append("g");
+var g  = g1.selectAll("g").data(d._children).enter().append("g");
 
 g.filter(function(d) { return d._children; }).classed("children", true).on("click", transition);
 
@@ -167,11 +165,11 @@ g.selectAll(".child")
   .attr("class", "child")
   .call(rect);
 
-g.append("rect")
+g.append ("rect")
   .attr  ("class", "parent")
   .call  (rect)
-  .on("click", function(d) { 
-    if(!d.children){
+  .on    ("click", function(d) { 
+    if(d.url){
     window.open(d.url); 
     }
   })
@@ -182,7 +180,7 @@ g.append("text").attr("dy", ".75em").text(function(d) { return d.name; }).call(t
 
 function transition(d) {
   if (transitioning || !d) return;
-  transitioning = true;
+      transitioning = true;
 
 var g2 = display(d),
   t1   = g1.transition().duration(750),
@@ -192,9 +190,7 @@ x.domain([d.x, d.x + d.dx]);
 y.domain([d.y, d.y + d.dy]);
  
 svg.style("shape-rendering", null);
-
 svg.selectAll(".depth").sort(function(a, b) { return a.depth - b.depth; });
-
 g2.selectAll("text").style("fill-opacity", 0);
 
 t1.selectAll("text").call(text).style("fill-opacity", 0);
@@ -227,7 +223,7 @@ function rect(rect) {
 
 function name(d) {
   return d.parent
-    ? name(d.parent) + ": the subset of artists " + d.name + " (click here to return to the first level, or anywhere below to view a piece of the Tate's collection from this time period)"
+    ? name(d.parent) + ": the subset of artists " + d.name + " (click here to return to the first level, or anywhere below to view a sample of the Tate's collection from this time period)"
     : d.name;
 }
 
