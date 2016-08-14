@@ -16,6 +16,8 @@
 .dropdown                                         {position: relative; display: inline-block;}
 .imgWrap                                          {position: relative; height: 80px; width: 600px; float: left;}
 .arc                                              {stroke: #fff;}
+.container1                                       {float:left;}
+.container2                                       {float:right;}
 .imgWrap:hover .imgDescription                    {visibility: visible; opacity:1; font-size: 30px;}
                    rect                           {stroke: #fff; stroke-width: 5px;}
                    rect.parent, .grandparent rect {stroke-width: 2px;}
