@@ -1,7 +1,0 @@
-@import url(../style.css?aea6f0a);
-
-body   {color:#5A5050; font-family: 'Open Sans Condensed', Helvetica, sans-serif; font-size: 10px; font-weight: bold; background: #F0F0F0; max-width:400px;}
-h1     {color:#5A5050; font-family: 'Open Sans Condensed', Helvetica, sans-serif; font-size: 10%;  margin-bottom:0em}
-svg    {padding: 0px 0 0 0px;}
-.arc   {stroke: #fff;}
-#chart {height:500px; width:400px;}

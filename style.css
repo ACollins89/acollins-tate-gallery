@@ -16,8 +16,6 @@
 .dropdown                                         {position: relative; display: inline-block;}
 .imgWrap                                          {position: relative; height: 80px; width: 600px; float: left;}
 .arc                                              {stroke: #fff;}
-.container1                                       {float:left;}
-.container2                                       {float:right;}
 .imgWrap:hover .imgDescription                    {visibility: visible; opacity:1; font-size: 30px;}
                    rect                           {stroke: #fff; stroke-width: 5px;}
                    rect.parent, .grandparent rect {stroke-width: 2px;}
@@ -26,7 +24,7 @@
 sub  {color:#5A5050; font-family: 'Open Sans Condensed', Helvetica, sans-serif}
 h1   {color:#5A5050; font-family: 'Open Sans Condensed', Helvetica, sans-serif; font-size: 170%; margin-bottom:0em}
 h2   {color:#5A5050; font-family: 'Open Sans Condensed', Helvetica, sans-serif; font-size: 100%; margin-bottom:0em}
-p    {color:#5A5050; font-family: 'Open Sans Condensed', Helvetica, sans-serif; font-size: 90%;  margin-top:   0em}
+p    {color:#5A5050; font-family: 'Open Sans Condensed', Helvetica, sans-serif; font-size: 95%;  margin-top:   0em}
 body {color:#5A5050; font-family: 'Open Sans Condensed', Helvetica, sans-serif; font-size: 13px; margin:       auto; background: #F0F0F0; position: relative;}
 svg  {padding: 0px 0 0 0px;}
 

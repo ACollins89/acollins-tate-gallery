@@ -8,11 +8,16 @@
 
 <div class = "container1" id = "chart1">
 
+<h1  style = "font-weight: bold">The Artists in the Tate: How Diverse Are They?</h1>
+<p>Use the below charts to find out!<br>
+<a href="https://github.com/tategallery/collection">Original data can be found on the Tate Github page.</a> The code used to create these charts was adapted from Mike Bostock, Zan Armstrong, and Sushanth Thangamani.</p>
 <h2  style = "font-weight: bold">Legend</h2>
-<p   style = "width: 960px">Depth of color indicates percent female artists</p>
+<p>Depth of color indicates percent female artists</p>
 <div id    = "legend"></div>
+<div id    = "legend"></div>
+<p><br>This is an interactive <a href="https://en.wikipedia.org/wiki/Treemapping">treemap</a>, where a larger box indicates a greater proportion of artists in that category.</p>
 
-<script src="http://d3js.org/d3.v3.min.js"></script>
+<script src="https://d3js.org/d3.v3.min.js"></script>
 
 <script>
 
@@ -240,28 +245,21 @@ function rect(rect) {
 
 function name(d) {
   return d.parent
-    ? name(d.parent) + ": the subset of " + d.name + " (click here to go back, or anywhere below to view a sample of the collection from this time period)"
+    ? name(d.parent) + ": where " + d.name + " were born (click here to return, or below to view a sample of the collection from this time period)"
     : d.name;
 }
 
 });
 
 </script>
-
-<footer>
-  <a href="https://github.com/tategallery/collection">Original data can be found on the Tate Github page</a>
-</footer>
-
-<footer>
-  <sub>Sources of code: Mike Bostock, Zan Armstrong, Sushanth Thangamani, and Stack Overflow</sub>
-</footer>
-
 </div>
 
 <div class = "container2" id = "chart2">
 <body>
 
-<script src="http://d3js.org/d3.v3.min.js"></script>
+<h1  style = "font-weight: bold">Proportion of Female Artists Represented Over Time in the Tate Collection</h1>
+
+<script src="https://d3js.org/d3.v3.min.js"></script>
 <script>
 
 var radius  = 74,
