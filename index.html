@@ -181,7 +181,7 @@ g.append("rect")
   .call(rect)
   .on("click", function(d) { 
     if(d.url){
-    window.open(d.url); //note: most browsers do not support forward/back buttons with window.open 
+    window.open(d.url, "_self"); //note: most browsers do not support forward/back buttons with window.open 
     }
   })
   .append("title")
